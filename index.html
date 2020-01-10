@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -11,7 +11,33 @@
 
 <!-- Title -->
 <title>On The List|尚 列</title>
+<link rel="stylesheet" type="text/css" href="/assets/code/css/code.css">
+<!-- code-->
+<!-- code-->
+<link href="assets/cod/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/assets/cod/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
 
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+			$('#jump li:eq(0)').fadeIn(800);
+		} else {
+			$('#jump li:eq(0)').fadeOut(800);
+		}
+	});
+	
+	$("#top").click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		},
+		1000);
+		return false;
+	});
+	
+});
+</script>
+   
 <!-- START CSS -->
 	<!-- Bootstrap -->
 	<link href="http://cdn.bootstrapmb.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +67,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700,800,900" rel="stylesheet">
 <!-- END CSS -->
-</head>
+
 <body id="body-top">
 	<!-- START LOADER -->
 	<div class="loader">
@@ -49,19 +75,17 @@
 	</div>
 	<!-- END LOADER -->
 <!-- END TOP HEADER -->
-
 	<!-- START HEADER -->
 	<div id="header">
 		<div class="container">
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="#">
 					<img src="assets/images/logo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headmainmenu" aria-controls="headmainmenu" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="mdi mdi-menu"></i> Menu
 				</button>
-
 				<div class="collapse navbar-collapse" id="headmainmenu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
@@ -85,6 +109,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="Join.html">加入我们</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="en/en.html">English</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -101,37 +128,12 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<!-- Slider 1 -->
-			<div class="carousel-item active" style="background-image: url('assets/images/slider/brand.jpg')">
-				<div class="carousel-caption">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-
-								<div class="slider-btn animated fadeInUp">
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="carousel-item active" style="background-image: url('assets/images/banner/img-1.jpg')">
 			</div>
-
 			<!-- Slider 2 -->
-			<div class="carousel-item" style="background-image: url('assets/images/slider/brand1.jpg')">
-				<div class="carousel-caption">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="slider-btn animated fadeInUp">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="carousel-item" style="background-image: url('assets/images/banner/img-2.jpg')">
 			</div>
-
 		</div>
-
 		<!-- Previous Btn -->
 		<a class="carousel-control-prev" href="#slider-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -153,17 +155,11 @@
 			<div class="row d-flex align-items-center">
 				<div class="col-lg-12 d-flex text-center">
 					<div class="section-start-col w-50">
-						<div class="float-left">
-							<h2>会员注册 Sign Up</h2>
+						<div class="text-center">
+							<h2>会员注册</h2>
 							<p class="m-0 col-form-control">
-								现在登记成为OnTheList尚列会员，即可参加快闪活动，尽享低至1折购物优惠!
-								Scan code to register as OnTheList member, to unlock the “Up To 90% Off” Flash Sales in town!</p>
-								<p class="color-yellow">即时登记可享新开幕限时优惠：免费会籍  JOIN TODAY FOR THE NEW OPENING LIMITED OFFER: FREE MEMBERSHIP</p>
-						</div>
-						<div class="float-right">
-							<div class="section-start-btn">
-								<a href="Member.html" class="btn bg-yellow">View All</a>
-							</div>
+								现在登记成为OnTheList尚列会员，即可参加快闪活动，尽享低至1折购物优惠!</p>
+								<p class="color-yellow">即时登记可享新开幕限时优惠：免费会籍</p>
 						</div>
 					</div>
 				</div>
@@ -173,13 +169,11 @@
 						<div>
 							<div class="service-item">
 								<div class="service-item-img">
-									<img src="assets/images/services/img1.jpg" alt="" class="w-100" />
+									<img src="assets/images//member/img1.jpg" alt="" class="w-100" />
 								</div>
 								<div class="card">
 									<h5>会员注册步骤 1</h5>
 									<p>扫描小程序码</p>
-									<p class="m-2 color-yellow"> Scan mini program code</p>
-									<a href="Member.html" class="btn btn-sm bg-yellow">View All</a>
 								</div>
 							</div>
 						</div>
@@ -187,13 +181,12 @@
 						<div>
 							<div class="service-item">
 								<div class="service-item-img">
-									<img src="assets/images/services/img-2.jpg" alt="" class="w-100" />
+									<img src="assets/images/member/img-1.jpg" alt="" class="w-100" />
 									
 								</div>
 								<div class="card">
 									<h5>会员注册步骤 2</h5>
 									<p>点击电子会员卡</p>
-									<a href="Member.html" class="btn btn-sm bg-yellow">View All</a>
 								</div>
 							</div>
 						</div>
@@ -201,12 +194,11 @@
 						<div>
 							<div class="service-item">
 								<div class="service-item-img">
-									<img src="assets/images/services/img-3.jpg" alt="" class="w-100" />
+									<img src="assets/images/member/img-2.jpg" alt="" class="w-100" />
 								</div>
 								<div class="card">
 									<h5>会员注册步骤 3</h5>
 									<p>填入基本信息，然后点击立即开卡.</p>
-									<a href="Member.html" class="btn btn-sm bg-yellow">View All</a>
 								</div>
 							</div>
 						</div>
@@ -214,12 +206,11 @@
 						<div>
 							<div class="service-item">
 								<div class="service-item-img">
-									<img src="assets/images/services/img-4.jpg" alt="" class="w-100" />
+									<img src="assets/images/member/img-3.jpg" alt="" class="w-100" />
 								</div>
 								<div class="card">
 									<h5>会员注册 步骤 4</h5>
 									<p>注册完成后进入会员中心，点击会员卡，即会出现会员条形码。 每次入场前只需出示条形码，即可入场购物。</p>
-									<a href="Member.html" class="btn btn-sm bg-yellow">View All</a>
 								</div>
 							</div>
 						</div>
@@ -227,12 +218,22 @@
 						<div>
 							<div class="service-item">
 								<div class="service-item-img">
-									<img src="assets/images/services/img-5.jpg" alt="" class="w-100" />
+									<img src="assets/images/member/img-4.jpg" alt="" class="w-100" />
 								</div>
 								<div class="card">
 									<h5>会员注册 步骤 5</h5>
-									<p>关注公众号，实时了解最新优惠信息</p>
-									<a href="Member.html" class="btn btn-sm bg-yellow">Get Now</a>
+									<p>注册完成后进入会员中心，点击会员卡，即会出现会员条形码。 每次入场前只需出示条形码，即可入场购物</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="service-item">
+								<div class="service-item-img">
+									<img src="assets/images/member/img-5.jpg" alt="" class="w-100" />
+								</div>
+								<div class="card">
+									<h5>会员注册 步骤 6 </h5>
+									<p>关注公众号，实时了解最新优惠信息。</p>
 								</div>
 							</div>
 						</div>
@@ -248,39 +249,144 @@
 	<!-- END Member -->
 
 
-	<!-- START Activity -->
-	<div id="get-now" class="bg-blue">
-		<div class="container">
-			<div class="row d-flex align-items-center">
+	<!-- Activity -->
 
-				<div class="col-lg-8 item-col">
-					<h2>最新活动     What’s Nex  </h2>					
+	<div id="our-projects" class="bg-blue-light">
+	<div class="container">
+		<div class="row d-flex align-items-center">
+
+			<div class="col-lg-12 d-flex text-center">
+				<div class="section-start-col w-50">
+					<div class="text-center">
+						<h2>最新活动 </h2>
+					</div>
 				</div>
+			</div>
 
-				<div class="col-lg-4 item-col">
-					<div class="get-now-right">
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-1.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
 						<ul>
-							<li><a href="Member.html" class="btn bg-white-default btn-block">View All</a></li>
+							<li><a class="mfpclick" href="#house-cleaning1"><i class="mdi mdi-eye"></i></a></li>
+						</ul>
+					
+					</div>
+				</div>
+				<div id="house-cleaning1" class="mfp-hide">
+					<a href="assets/images/projects/img-1.jpg"></a>
+					<a href="assets/images/projects/img-1-2.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-2.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
+						<ul>
+							<li><a class="mfpclick" href="#commercial-cleaning1"><i class="mdi mdi-eye"></i></a></li>
+						</ul>
+					
+					</div>
+				</div>
+				<div id="commercial-cleaning1" class="mfp-hide">
+					<a href="assets/images/projects/img-2.jpg"></a>
+					<a href="assets/images/projects/img-2-2.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-3.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
+						<ul>
+							<li><a class="mfpclick" href="#laundry-services1"><i class="mdi mdi-eye"></i></a></li>
+						</ul>
+						
+					</div>
+				</div>
+				<div id="laundry-services1" class="mfp-hide">
+					<a href="assets/images/projects/img-3.jpg"></a>
+					<a href="assets/images/projects/img-3-3.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-4.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
+						<ul>
+							<li><a class="mfpclick" href="#car-cleaning1"><i class="mdi mdi-eye"></i></a></li>
+						</ul>
+					
+					</div>
+				</div>
+				<div id="car-cleaning1" class="mfp-hide">
+					<a href="assets/images/projects/img-4.jpg"></a>
+					<a href="assets/images/projects/img-4-4.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-5.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
+						<ul>
+							<li><a class="mfpclick" href="#renovation-cleaning1"><i class="mdi mdi-eye"></i></a></li>
+						</ul>
+					
+					</div>
+				</div>
+				<div id="renovation-cleaning1" class="mfp-hide">
+					<a href="assets/images/projects/img-5.jpg"></a>
+					<a href="assets/images/projects/img-5-5.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="hover-eff-warp">
+					<div>
+						<img src="assets/images/projects/img-6.jpg" class="w-100" alt="" />
+					</div>
+					<div class="hover-eff-content hover-eff-bottom">
+						<ul>
+							<li><a class="mfpclick" href="#carpet-cleaning1"><i class="mdi mdi-eye"></i></a></li>
 						</ul>
 					</div>
 				</div>
-
+				<div id="carpet-cleaning1" class="mfp-hide">
+					<a href="assets/images/projects/img-6.jpg"></a>
+					<a href="assets/images/projects/img-6-6.jpg"></a>
+				</div>
 			</div>
+
 		</div>
 	</div>
-	<!-- END Activit -->
-
-
+</div>
+	
 	<!-- Activity -->
+
+
+
+	<!-- START brand -->
 	<div id="blog">
 		<div class="container">
 			<div class="row d-flex align-items-center">
 
 				<div class="col-lg-12 d-flex text-center">
 					<div class="section-start-col w-50">
-						<div class="float-left">
-							<h2>最新活动</h2>
-
+						<div class="text-center">
+							<h2>合作品牌</h2>
 						</div>
 					</div>
 				</div>
@@ -289,16 +395,13 @@
 					<div class="blog-item">
 						<div class="blog-item-img">
 							<img src="assets/images/activity/img-1.jpg" alt="" class="w-100" />
-	
 						</div>
 						<div class="card">
 							<P>Premium members :13/11 18:00</P>
 							<p>Opening date:14/11 08:00</p>
-							<a href="Activity.html" class="btn btn-sm bg-yellow">View All</a>
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-4">
 					<div class="blog-item">
 						<div class="blog-item-img">
@@ -308,7 +411,6 @@
 						<div class="card">
 							<P>Premium members :13/11 18:00</P>
 							<p>Opening date:14/11 08:00.</p>
-							<a href="Activity.html" class="btn btn-sm bg-yellow">View All</a>
 						</div>
 					</div>
 				</div>
@@ -321,151 +423,10 @@
 						<div class="card">
 							<P>Premium members :13/11 18:00</P>
 							<p>Opening date:14/11 08:00.</p>
-							<a href="Activity.html" class="btn btn-sm bg-yellow">View All</a>
 						</div>
 					</div>
 				</div>
 				
-			</div>
-		</div>
-	</div>
-	<!-- Activity -->
-
-
-	
-
-	<!-- START brand -->
-	<div id="our-projects" class="bg-blue-light">
-		<div class="container">
-			<div class="row d-flex align-items-center">
-
-				<div class="col-lg-12 d-flex text-center">
-					<div class="section-start-col w-50">
-						<div class="float-left">
-							<h2>合作品牌 </h2>
-							<p class="m-0 color-blue">Brands Partners</p>
-						</div>
-						<div class="float-right">
-							<div class="section-start-btn">
-								<a href="Brand.html" class="btn bg-yellow">View All</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-1.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#house-cleaning1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-						
-						</div>
-					</div>
-					<div id="house-cleaning1" class="mfp-hide">
-						<a href="assets/images/projects/img-1.jpg"></a>
-						<a href="assets/images/projects/img-1-2.jpg"></a>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-2.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#commercial-cleaning1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-						
-						</div>
-					</div>
-					<div id="commercial-cleaning1" class="mfp-hide">
-						<a href="assets/images/projects/img-2.jpg"></a>
-						<a href="assets/images/projects/img-2-2.jpg"></a>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-3.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#laundry-services1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-							
-						</div>
-					</div>
-					<div id="laundry-services1" class="mfp-hide">
-						<a href="assets/images/projects/img-3.jpg"></a>
-						<a href="assets/images/projects/img-3-3.jpg"></a>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-4.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#car-cleaning1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-						
-						</div>
-					</div>
-					<div id="car-cleaning1" class="mfp-hide">
-						<a href="assets/images/projects/img-4.jpg"></a>
-						<a href="assets/images/projects/img-4-4.jpg"></a>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-5.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#renovation-cleaning1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-						
-						</div>
-					</div>
-					<div id="renovation-cleaning1" class="mfp-hide">
-						<a href="assets/images/projects/img-5.jpg"></a>
-						<a href="assets/images/projects/img-5-5.jpg"></a>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="hover-eff-warp">
-						<div>
-							<img src="assets/images/projects/img-6.jpg" class="w-100" alt="" />
-						</div>
-						<div class="hover-eff-content hover-eff-bottom">
-							<ul>
-								<li><a href="Brand.html"><i class="mdi mdi-link"></i></a></li>
-								<li><a class="mfpclick" href="#carpet-cleaning1"><i class="mdi mdi-eye"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div id="carpet-cleaning1" class="mfp-hide">
-						<a href="assets/images/projects/img-6.jpg"></a>
-						<a href="assets/images/projects/img-6-6.jpg"></a>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
@@ -478,14 +439,8 @@
 
 			<div class="col-lg-12 d-flex text-center">
 				<div class="section-start-col w-50">
-					<div class="float-left">
+					<div class="text-center">
 						<h2>关于我们</h2>
-						<p class="m-0 color-blue">About US </p>
-					</div>
-					<div class="float-right">
-						<div class="section-start-btn">
-							<a href="About.html" class="btn bg-yellow">View All</a>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -640,9 +595,9 @@
 					</div>
 					<div class="collapse-head">
 					<div class="collapse-btn">
-						<button class="collapsed" data-toggle="collapse" data-target="#content-three" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 4.OnTheList尚列的快闪活动接受哪种付款方式？</button>
+						<button class="collapsed" data-toggle="collapse" data-target="#content-four" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 4.OnTheList尚列的快闪活动接受哪种付款方式？</button>
 					</div>
-					<div id="content-three" class="collapse" data-parent="#accordion">
+					<div id="content-four" class="collapse" data-parent="#accordion">
 						<div>
 							<p>我们支持信用卡（VISA、万事达、美国运通）、银联卡、支付宝和微信支付。</p>
 						</div>
@@ -650,9 +605,9 @@
 				</div>
 				<div class="collapse-head">
 						<div class="collapse-btn">
-							<button class="collapsed" data-toggle="collapse" data-target="#content-three" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 5. 如何得知OnTheList尚列的快闪活动的商品的价格、存货等详情？</button>
+							<button class="collapsed" data-toggle="collapse" data-target="#content-five" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 5. 如何得知OnTheList尚列的快闪活动的商品的价格存货等详情？</button>
 						</div>
-						<div id="content-three" class="collapse" data-parent="#accordion">
+						<div id="content-five" class="collapse" data-parent="#accordion">
 							<div>
 								<p>答：会员必须亲临本店查询货品资料及详情。</p>
 							</div>
@@ -660,9 +615,9 @@
 					</div>
 					<div class="collapse-head">
 						<div class="collapse-btn">
-							<button class="collapsed" data-toggle="collapse" data-target="#content-three" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 6. 假如商品售罄，何时会再补货？</button>
+							<button class="collapsed" data-toggle="collapse" data-target="#content-six" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 6. 假如商品售罄，何时会再补货？</button>
 						</div>
-						<div id="content-three" class="collapse" data-parent="#accordion">
+						<div id="content-six" class="collapse" data-parent="#accordion">
 							<div>
 								<p>答：OnTheList尚列的快闪活动之所有售卖货品由合作品牌提供，且数量有限，以先到先得形式出售。假如合作品牌于指定活动期间进行补货，OnTheList尚列将在官方微博告知，详情请留意最新消息。</p>
 							</div>
@@ -671,9 +626,9 @@
 
 					<div class="collapse-head">
 						<div class="collapse-btn">
-							<button class="collapsed" data-toggle="collapse" data-target="#content-three" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 7. 如何退货或者换货？</button>
+							<button class="collapsed" data-toggle="collapse" data-target="#content-seven" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 7. 如何退货或者换货？</button>
 						</div>
-						<div id="content-three" class="collapse" data-parent="#accordion">
+						<div id="content-seven" class="collapse" data-parent="#accordion">
 							<div>
 								<p>答：由于我们每次都是短期的快闪活动，所以我们无法提供退款或退货换货服务，请务必在确定购买前仔细检查您的商品。</p>
 							</div>
@@ -683,9 +638,9 @@
 
 					<div class="collapse-head">
 						<div class="collapse-btn">
-							<button class="collapsed" data-toggle="collapse" data-target="#content-four" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 8. 假如指定的快闪活动已经结束，还可以再购买该品牌的商品吗？</button>
+							<button class="collapsed" data-toggle="collapse" data-target="#content-eight" aria-expanded="false"><i class="mdi mdi-plus mdi-24px"></i> 8. 假如指定的快闪活动已经结束，还可以再购买该品牌的商品吗？</button>
 						</div>
-						<div id="content-four" class="collapse" data-parent="#accordion">
+						<div id="content-eight" class="collapse" data-parent="#accordion">
 							<div>
 								<p>答：快闪一旦结束，OnTheList尚列将归还所有货品予品牌，并不会保留任何货品，故会员必须在指定活动期间进行购买。</p>
 							</div>
@@ -698,30 +653,6 @@
 	</div>
 </div>
 <!-- END Common-->
-
-<!-- contact -->
-<div id="breadcrumb" class="breadcrumb-bg">
-	<div class="container">
-		<div class="row d-flex align-items-center">
-			<div class="col-lg-6">
-				<div class="breadcrumb-left">
-					<nav>
-						<ul>
-							<li class="breadcrumb-item"><a href="index.html">Contact</a></li>
-							<li>Contact</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="breadcrumb-right">
-					<h5>联系我们</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END contact -->
 
 <!-- START contact -->
 <div id="reviews">
@@ -748,7 +679,7 @@
 						</div>
 						<div class="col-sm-9 p-0">
 							<div class="review-bottom">
-								<h5>OnTheList尚列</h5>
+								<h5><a href="">@OnTheList尚列</a></h5>
 							</div>
 						</div>
 					</div>
@@ -767,7 +698,7 @@
 						</div>
 						<div class="col-sm-9 p-0">
 							<div class="review-bottom">
-								<h5>@OnTheList尚列快闪</h5>
+								<h5><a href="https://weibo.com/u/6544075617?refer_flag=1005055014_">@OnTheList尚列快闪</a></h5>
 							</div>
 						</div>
 					</div>
@@ -782,7 +713,7 @@
 					<div class="row d-flex align-items-center m-0">
 						<div class="col-sm-9 p-0">
 							<div class="review-bottom">
-								<h5>contact@onthelist.cn</h5>
+								<h5><a href="mailto:contact@onthelist.cn">contact@onthelist.cn</a></h5>
 							</div>
 						</div>
 					</div>
@@ -801,14 +732,10 @@
 
 			<div class="col-lg-12 d-flex text-center">
 				<div class="section-start-col w-50">
-					<div class="float-left">
+					<div class="text-center">
 						<h2>加入我们</h2>
-						<p class="m-0 color-blue">email: hr@onthelist.cn</p>
-					</div>
-					<div class="float-right">
-						<div class="section-start-btn">
-							<a href="Join.html" class="btn bg-yellow">View All</a>
-						</div>
+						<span class="m-0 color-yellow">邮箱 : <a href="mailto:hr@onthelist.cn">hr@onthelist.cn</a></span>
+
 					</div>
 				</div>
 			</div>
@@ -818,7 +745,7 @@
 					<div class="blog-item-img">
 						<img src="assets/images/join/img-1.jpg" alt="" class="w-100" />
 						<div class="blog-date">
-							<h6>18/Dec/2019</h6>
+							<h6>18/12/2019</h6>
 						</div>
 					</div>
 					
@@ -830,7 +757,7 @@
 					<div class="blog-item-img">
 						<img src="assets/images/join/img-1.jpg" alt="" class="w-100" />
 						<div class="blog-date">
-							<h6>18/Dec/2019</h6>
+							<h6>18/12/2019</h6>
 						</div>
 					</div>
 				</div>
@@ -841,7 +768,7 @@
 					<div class="blog-item-img">
 						<img src="assets/images/join/img-1.jpg" alt="" class="w-100" />
 						<div class="blog-date">
-							<h6>18/Dec/2019</h6>
+							<h6>18/12/2019</h6>
 						</div>
 					</div>
 				</div>
@@ -857,10 +784,9 @@
 	<div id="sub-footer">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-
 				<div class="col-lg-6">
 					<div class="sub-footer-left">
-						<p class="m-0">&copy;  2019 尚列 | 沪ICP备19027785号</p>
+						<p class="m-0">©  2019 尚列 | 沪ICP备19027785号</p>
 					</div>
 				</div>
 				
@@ -868,13 +794,46 @@
 		</div>
 	</div>
 	<!-- END SUB FOOTER -->
-
 	<!-- START TO TOP BTN -->
 	<div class="btn bg-yellow backto-top-btn">
 		<i class="mdi mdi-arrow-up"></i>
 	</div>
 	<!-- END TO TOP BTN -->
 
+	<!--code-->
+	<ul id="jump">
+		<li style="display:none;"><a id="top" href="#top"></a></li>
+		<li><a id="sina" href="https://weibo.com/u/6544075617?refer_flag=1005055014_" target="_blank"></a></li>
+		<li>
+			<a id="weixin" href="javascript:void(0)" onmouseover="showEWM()" onmouseout="hideEWM()">
+				<div id="EWM"><img src="/assets/cod/images/weixin_code.jpg" /></div>
+			</a>
+		</li>
+	</ul>
+	
+	<script type="text/javascript">
+	function showEWM(){
+		document.getElementById("EWM").style.display = 'block';
+	}
+	function hideEWM(){
+		document.getElementById("EWM").style.display = 'none';
+	}
+	</script>
+	<!--en code-->
+
+
+<!--在线客服  -->
+<div class="scrollsidebar" id="scrollsidebar">
+  <div class="side_content">
+    <div class="side_list">
+      
+      <div class="side_center">
+        <div class="other">
+          <p><img src="/assets/code/images/qrcode.png"></p>
+          
+        </div>
+<script type="text/javascript" src="/assets/code/js/code.js"></script>
+	
 <!-- START SCRIPTS -->
 	<!-- Jquery -->
     <script src="assets/js/jquery/jquery-2.2.4.min.js"></script>
@@ -904,6 +863,6 @@
     <!-- Common Script -->
     <script src="assets/js/common-script.js"></script>
 <!-- END SCRIPTS -->
-
+</body>
 </body>
 </html>
