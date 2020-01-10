@@ -654,7 +654,7 @@ button[aria-expanded="true"]{
 	color: #fff;
 }
 #top-header li a:hover{
-	color: black;
+	color: #f2b90c;
 }
 #top-header .btn{
 	color: #191a1d;
@@ -869,7 +869,6 @@ button[aria-expanded="true"]{
 	margin: 0;
 	padding: 0;
 }
-
 #breadcrumb nav ul li{
 	margin: 0;
 	padding: 0;
@@ -885,7 +884,7 @@ button[aria-expanded="true"]{
 }
 #breadcrumb nav ul li.active,
 #breadcrumb nav ul li:hover a{
-	color: black;
+	color: #f2b90c;
 }
 #breadcrumb .breadcrumb-left,
 #breadcrumb .breadcrumb-right{
@@ -967,7 +966,7 @@ button[aria-expanded="true"]{
 	-o-transition:all 0.4s;
 }
 #services-items .card:hover h5{
-	color: black;
+	color: #1f7bdd;
 }
 #services-items .service-single-img{
 	margin-bottom: 20px;
@@ -1430,8 +1429,6 @@ button[aria-expanded="true"]{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-
-
 #reviews .card{
 	margin-bottom: 30px;
 }
@@ -1468,10 +1465,7 @@ button[aria-expanded="true"]{
 }
 #reviews .review-bottom h5{
 	margin-bottom: 5px;
-
-	
 }
-
 #reviews .review-bottom p{
 	margin-bottom: 0;
     font-size: 16px;

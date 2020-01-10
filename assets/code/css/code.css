@@ -1,0 +1,14 @@
+html {overflow-x:hidden;}
+
+.custom_service p img {display: inline; vertical-align:middle;}
+.scrollsidebar{position:absolute; z-index:999; top:450px;right:0}
+.side_content{width:230px; height:auto; overflow:hidden; float:left; }
+.other  { text-align:center;border-bottom:0 solid ;border-top:0 solid #ddd}
+.other img{
+    display: block;
+    height: 220px;
+    width: 300px;
+    padding-right: 100px;
+
+}
+
